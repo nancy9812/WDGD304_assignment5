@@ -1,13 +1,342 @@
+@import url("https://use.typekit.net/yyw2npo.css");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+html {
+  background-color: #101116;
+  color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: montserrat, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+}
+
+.close {
+  color: #FFC8C8;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  font-weight: 500;
+}
+
+div.about button {
+  background-color: transparent;
+  color: #FFC8C8;
+  position: absolute;
+  transform: rotate(270deg);
+  top: 45%;
+  left: 0;
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+div.about .modal .modal-content {
+  margin: auto;
+  margin-top: 20vh;
+  width: 95%;
+}
+
+div.about .modal .modal-content .sub-title {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+div.about .modal .modal-content .skills {
+  display: inline-flex;
+  text-align: left;
+  font-weight: 500;
+}
+
+div.about .modal .modal-content .skills div {
+  margin: 7px;
+}
+
+div.about .modal .modal-content .skills .right {
+  text-align: right;
+  direction: rtl;
+}
+
+div.about .modal .modal-content .skills .skill {
+  margin: 0;
+  margin-top: 7px;
+}
+
+progress {
+  background-color: #101116;
+}
+
+progress::-moz-progress-bar {
+  background-color: #FFC8C8;
+}
+
+progress::-webkit-progress-value {
+  background-color: #FFC8C8;
+}
+
+div.header {
+  background-image: url(../src/components/images/galaxy-bg-1.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+img.small-logo {
+  width: 70px;
+  height: 70px;
+}
+
+h1.title {
+  font-size: 45px;
+  font-family: span, serif;
+  margin-top: 30vh;
+  margin-bottom: 0;
+}
+
+h2.sub-title {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+h3.arrow-down {
+  position: absolute;
+  font-size: 35px;
+  left: 50%;
+  bottom: -3%;
+}
+
+h4.heading {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 7px;
+}
+
+h6 {
+  font-weight: 300;
+  margin: 7px;
+  margin-bottom: 15px;
+}
+
+div.work-row {
+  padding: 25px;
+}
+
+div.work-row div.gallery {
+  display: flex;
+  justify-content: center;
+}
+
+div.work-row div.gallery img, div div.gallery video {
+  width: 90%;
+  margin: 20px;
+}
+
+div.work-row div.gallery img {
+  display: flex;
+  object-fit: contain;
+}
+
+div.work-row div.gallery div {
+  width: 100%;
+}
+
+div.work-row div.one-row {
+  display: none;
+}
+
+div.work-row div.two-rows {
+  display: none;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+div.desc a {
+  padding: 17px;
+  color: #FFC8C8;
+  font-weight: 500;
+}
+
+div.footer {
+  height: 130px;
+}
+
+div.footer a img, div.footer span img {
+  width: 30px;
+  height: 30px;
+  margin: 20px 15px 0 15px;
+}
+
+div.footer .modal {
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+div.footer .modal form {
+  padding-top: 30vh;
+}
+
+div.footer .modal form label {
+  font-weight: 500;
+}
+
+div.footer .modal form input, div.footer .modal form textarea {
+  width: 300px;
+  margin-bottom: 25px;
+  border: none;
+  font-size: 14px;
+  padding: 5px;
+}
+
+div.footer .modal form textarea {
+  height: 100px;
+}
+
+div.footer .modal form input[type=submit] {
+  background-color: transparent;
+  color: #FFC8C8;
+  width: 70px;
+  padding: 7px;
+}
+
+div.footer .bottom-foot {
+  margin-top: 50px;
+}
+
+div.footer .bottom-foot img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Media Queries */
+
+/* tablet screen */
+
+@media screen and (min-width: 768px) {
+  div.about .modal {
+    padding: 40px;
+  }
+  .close:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .close {
+    position: absolute;
+    top: 41%;
+    left: 0;
+    right: 94%;
+    transform: rotate(270deg);
+  }
+  h1.title {
+    font-size: 55px;
+  }
+  h2.sub-title {
+    font-size: 20px;
+  }
+  h4.heading {
+    margin-bottom: 30px;
+  }
+  div.work-row div.one-col {
+    display: none;
+  }
+  div.work-row div.two-rows {
+    display: flex;
+  }
+  div.work-row div.two-rows div {
+    width: 50%;
+  }
+  div.about button:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  p {
+    font-size: 17px;
+  }
+  div.desc a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  div.footer span {
+    cursor: pointer;
+  }
+  div.footer .modal form input[type=submit] {
+    font-size: 17px;
+  }
+  div.footer a img, div.footer span img {
+    width: 40px;
+    height: 40px;
+    margin: 20px 20px 0 20px;
+  }
+}
+
+/* laptop screen */
+
+@media screen and (min-width: 1025px) {
+  h1.title {
+    font-size: 70px;
+  }
+  h2.sub-title {
+    font-size: 25px;
+  }
+  h3.arrow-down {
+    font-size: 50px;
+  }
+  div.work-row {
+    padding: 100px;
+  }
+  div.about button {
+    position: fixed;
+  }
+  div.work-row div.one-row {
+    display: flex;
+  }
+  div.work-row div.two-rows {
+    display: none;
+  }
+  div.work-row div.gallery div {
+    width: 33%;
+  }
+  a {
+    font-size: 17px;
+  }
+  p {
+    margin-bottom: 50px;
+  }
+  div.footer {
+    height: 150px;
+    padding: 50px;
+  }
 }
